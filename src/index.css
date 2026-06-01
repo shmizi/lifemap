@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink-900: #0a0a0f;
+  --ink-800: #12121a;
+  --ink-700: #1c1c28;
+  --ink-600: #2a2a3d;
+  --lime-400: #c8f135;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: var(--ink-900);
+  color: #e2e8f0;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--ink-800); }
+::-webkit-scrollbar-thumb { background: var(--ink-600); border-radius: 3px; }
+
+.goal-card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.goal-card-hover:hover { transform: translateY(-2px); }
